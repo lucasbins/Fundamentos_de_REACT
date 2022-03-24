@@ -1,5 +1,5 @@
 import React from 'react';
-import If from './If';
+import If, { Else } from './If';
 
 // import { Container } from './styles';
 
@@ -9,9 +9,9 @@ function UsuarioInfo(props) {
     <div>
       <If test={usuario && usuario.nome}>
         Seja bem vindo Usuario <strong>{props.usuario.nome}</strong>!
-      </If>
-      <If test={!usuario || !usuario.nome}>
-        Seja bem vindo Usuario <strong>Amigao</strong>!
+        <Else>
+          Seja bem vindo <strong>Amigao</strong>!
+        </Else>
       </If>
       
     </div>
