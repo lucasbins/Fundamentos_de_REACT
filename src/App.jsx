@@ -15,6 +15,8 @@ import ParOuImpar from "./components/condicional/ParOuImpar"
 import UsuarioInfo from "./components/condicional/UsuarioInfo"
 import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import Input from "./components/formulario/Input"
+import Contador from "./components/contador/Contador"
 
 export default function App(props) {
 
@@ -25,9 +27,18 @@ export default function App(props) {
             <h1>Fundamentos de REACT</h1>
 
             <div className="Cards">
+                <Card title="#13 - Contador" color={color()}>
+                    <Contador numeroInicial={25} passoInicial={1}/>
+                </Card>
+                
+                <Card title="#11 - Componente Controlado(input)" color={color()}>
+                    <Input/>
+                </Card>
+
                 <Card title="#10 - Comunicacao Indireta" color={color()}>
                     <IndiretaPai/>
                 </Card>
+
                 <Card title="#09 - Comunicacao Direta" color={color()}>
                     <DiretaPai/>
                 </Card>
