@@ -17,6 +17,7 @@ import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import Input from "./components/formulario/Input"
 import Contador from "./components/contador/Contador"
+import Mega from "./components/mega/Mega"
 
 export default function App(props) {
 
@@ -27,6 +28,10 @@ export default function App(props) {
             <h1>Fundamentos de REACT</h1>
 
             <div className="Cards">
+                <Card title="#14 - Desafio Mega" color={color()}>
+                    <Mega qtde={6}/>
+                </Card>
+
                 <Card title="#13 - Contador" color={color()}>
                     <Contador numeroInicial={25} passoInicial={1}/>
                 </Card>
